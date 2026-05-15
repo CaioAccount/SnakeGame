@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Snake — Cyberpunk Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="game-wrap">
+    <div id="hud">
+      <div class="hud-box">
+        <div class="hud-label">Score</div>
+        <div class="hud-value" id="score">0</div>
+      </div>
+      <div class="hud-box">
+        <div class="hud-label">Level</div>
+        <div class="hud-value" id="level">1</div>
+      </div>
+      <div class="hud-box">
+        <div class="hud-label">Best</div>
+        <div class="hud-value" id="best">0</div>
+      </div>
+    </div>
+
+    <div id="canvas-wrap">
+      <canvas id="c" width="500" height="420"></canvas>
+      <div id="lvl-flash">LEVEL UP!</div>
+      <div id="overlay">
+        <h2>⬡ NEON SNAKE</h2>
+        <div class="sub">CYBERPUNK EDITION</div>
+        <div id="final-score" class="score-final" style="display:none"></div>
+        <button id="start-btn">▶ START GAME</button>
+        <div id="tip">WASD / Arrow Keys to move</div>
+      </div>
+    </div>
+
+    <div class="mobile-btns">
+      <div class="mob-row"><button class="mob-btn" id="mb-up">▲</button></div>
+      <div class="mob-row">
+        <button class="mob-btn" id="mb-left">◀</button>
+        <button class="mob-btn" id="mb-down">▼</button>
+        <button class="mob-btn" id="mb-right">▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
