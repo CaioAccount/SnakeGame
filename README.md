@@ -1,2 +1,1 @@
-Link - snakecyberpunk.netlify.app
-
+Link - snakecyberpunk.netlify.app/
