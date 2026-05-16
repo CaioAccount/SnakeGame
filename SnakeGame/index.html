@@ -23,26 +23,57 @@
         <div class="hud-label">Best</div>
         <div class="hud-value" id="best">0</div>
       </div>
+      <div class="hud-box" id="combo-box" style="display:none">
+        <div class="hud-label">Combo</div>
+        <div class="hud-value combo-val" id="combo">x1</div>
+      </div>
+    </div>
+
+    <div id="powerup-bar">
+      <span id="powerup-label"></span>
+      <div id="powerup-timer-wrap" style="display:none">
+        <div id="powerup-timer-bar"></div>
+      </div>
     </div>
 
     <div id="canvas-wrap">
       <canvas id="c" width="500" height="420"></canvas>
       <div id="lvl-flash">LEVEL UP!</div>
+
+      <!-- MAIN OVERLAY (start / pause / game over) -->
       <div id="overlay">
-        <h2>⬡ NEON SNAKE</h2>
-        <div class="sub">CYBERPUNK EDITION</div>
+        <h2 id="overlay-title">⬡ NEON SNAKE</h2>
+        <div class="sub" id="overlay-sub">CYBERPUNK EDITION</div>
         <div id="final-score" class="score-final" style="display:none"></div>
         <button id="start-btn">▶ START GAME</button>
-        <div id="tip">WASD / Arrow Keys to move</div>
+        <div id="tip">WASD / Setas — P para pausar</div>
+      </div>
+
+      <!-- HIGH SCORES PANEL -->
+      <div id="scores-panel" style="display:none">
+        <h2>🏆 HIGH SCORES</h2>
+        <ol id="scores-list"></ol>
+        <button id="scores-close-btn">VOLTAR</button>
       </div>
     </div>
 
-    <div class="mobile-btns">
-      <div class="mob-row"><button class="mob-btn" id="mb-up">▲</button></div>
-      <div class="mob-row">
-        <button class="mob-btn" id="mb-left">◀</button>
-        <button class="mob-btn" id="mb-down">▼</button>
-        <button class="mob-btn" id="mb-right">▶</button>
+    <!-- LEGEND: food types -->
+    <div id="legend">
+      <div class="legend-item"><span class="dot dot-normal"></span> Normal +10</div>
+      <div class="legend-item"><span class="dot dot-bonus"></span> Bônus +50</div>
+      <div class="legend-item"><span class="dot dot-slow"></span> Lento ⏱</div>
+      <div class="legend-item"><span class="dot dot-double"></span> 2× pts</div>
+    </div>
+
+    <div id="bottom-bar">
+      <button id="scores-btn">🏆 SCORES</button>
+      <div class="mobile-btns">
+        <div class="mob-row"><button class="mob-btn" id="mb-up">▲</button></div>
+        <div class="mob-row">
+          <button class="mob-btn" id="mb-left">◀</button>
+          <button class="mob-btn" id="mb-down">▼</button>
+          <button class="mob-btn" id="mb-right">▶</button>
+        </div>
       </div>
     </div>
   </div>
