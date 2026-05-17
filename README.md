@@ -18,5 +18,7 @@ Interface simples e responsiva
 📁 SnakeGame
 
  ├── index.html
+ 
  ├── style.css
+ 
  └── game.js
