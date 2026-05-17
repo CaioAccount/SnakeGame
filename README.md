@@ -15,9 +15,9 @@ Interface simples e responsiva
 
 📂 **Estrutura do Projeto**
 
+```
 📁 SnakeGame
 
-```
  ├── game.js # Lógica do jogo (movimento, colisão, pontuação)
  
  ├── index.html # Estrutura do jogo (tela, elementos, layout)
