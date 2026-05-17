@@ -22,6 +22,6 @@ Interface simples e responsiva
  
  ├── index.html # Estrutura do jogo (tela, elementos, layout)
  
- └── game.js # Lógica do jogo (movimento, colisão, pontuação)
+ └── style.css # Visual e estilo cyberpunk/neon do jogo
 
 ```
